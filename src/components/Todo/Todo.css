@@ -21,6 +21,10 @@
     flex-wrap: wrap;
 }
 
+.menuIcon {
+    margin-right: 5px;
+}
+
 .timeLabel {
     width: 30%;
     font-size: small;

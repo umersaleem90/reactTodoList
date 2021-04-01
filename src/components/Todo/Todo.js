@@ -3,6 +3,7 @@ import { getDateAndTimeString, getTaskStringColor } from "./helper";
 import "./Todo.css";
 import CompleteIcon from "../../assets/icons/icon-complete.png";
 import DeleteIcon from "../../assets/icons/icon-delete.png";
+import MenuIcon from "../../assets/icons/icon-menu.png";
 
 export default function Todo({ todo, completeTodo, deleteTodo }) {
     function handleOnClickComplete() {
@@ -19,6 +20,7 @@ export default function Todo({ todo, completeTodo, deleteTodo }) {
                     className={"taskLabel"}
                     style={{ color: getTaskStringColor(todo.completed) }}
                 >
+                    <img className={"menuIcon"} src={MenuIcon} alt={"menu"} />
                     {todo.task}
                 </label>
                 <label className={"timeLabel"}>
