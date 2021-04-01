@@ -40,12 +40,7 @@ export default function Main() {
     return (
         <div className={"main"}>
             <div class={"inputContainer"}>
-                <input
-                    maxLength={100}
-                    className={"input"}
-                    ref={inputRef}
-                    type="text"
-                />
+                <input className={"input"} ref={inputRef} type="text" />
                 <button className={"addButton"} onClick={handleAddTodo}>
                     <img src={AddIcon} alt={"Add"} className={"addIcon"} />
                     Add Task
